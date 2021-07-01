@@ -4,7 +4,7 @@ import ds.LinkList.Node;
 
 public class Queue {
 
-	//creating  of node 
+	//creating head node 
 	Node front;
 	Node rear;
 	
@@ -40,11 +40,23 @@ public class Queue {
 		 }
 		 return newNode;
 	}
-// method to display Queue
+	//uc5 delete the elements from Queue(Dequeue)
+	public void  dequeue() 
+	 {
+		int popData = 0;
+		if (front == null && rear==null) {
+				System.out.println("queue is empty");
+			}
+			 popData = front.data;
+			 front = front.next;	
+	 }
+
+	
+	
+	// method to display Queue
 	public void print() 
 	 {			 
-		 Node temp = front;
-		 
+		 Node temp = front;	 
 		 if(temp==null)
 		 {
 			 System.out.println("queue is empty");
@@ -56,9 +68,5 @@ public class Queue {
 		 }
 		 System.out.println();
 	 }
-	
-
-
-
-	
+		
 }
