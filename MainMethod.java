@@ -1,6 +1,5 @@
 package ds;
 
-//main method
 public class MainMethod {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,7 +8,12 @@ public class MainMethod {
 		stackQueue.push(30);
 		stackQueue.push(56);
 		stackQueue.print();
-		
+		stackQueue.peek();
+		stackQueue.push(34);
+		stackQueue.print();
+		stackQueue.peek();
+		stackQueue.pop();
+		stackQueue.print();
 
 	}
 
